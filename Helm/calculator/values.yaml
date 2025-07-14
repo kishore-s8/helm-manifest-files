@@ -2,8 +2,9 @@
 replicaCount: 1
 
 image:
-  repository: raam2023/youtubev1
-  pullPolicy: Always
+  repository: web-calculator
+  tag: latest
+  pullPolicy: Never
 
 nameOverride: ""
 fullnameOverride: ""
@@ -17,6 +18,6 @@ imagePullSecrets:
   - name: dockerhub-secret
 
 podLabels:
-  app: youtubev1
+  app: web-calculator
 
 containerPort: 80
