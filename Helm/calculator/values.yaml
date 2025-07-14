@@ -1,1 +1,22 @@
 
+replicaCount: 1
+
+image:
+  repository: raam2023/youtubev1
+  pullPolicy: Always
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30009
+
+imagePullSecrets:
+  - name: dockerhub-secret
+
+podLabels:
+  app: youtubev1
+
+containerPort: 80
