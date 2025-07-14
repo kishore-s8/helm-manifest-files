@@ -2,7 +2,7 @@
 replicaCount: 1
 
 image:
-  repository: web-calculator
+  repository: 8kishore8/web-calculator
   tag: latest
   pullPolicy: Never
 
