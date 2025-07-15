@@ -21,4 +21,4 @@ imagePullSecrets:
 podLabels:
   app: app-calc
 
-containerPort: 3000
+containerPort: 9090
