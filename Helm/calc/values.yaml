@@ -1,1 +1,24 @@
 
+
+replicaCount: 1
+
+image:
+  repository: 8kishore8/calculatorapp
+  tag: latest
+  pullPolicy: Never
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: NodePort
+  port: 3000
+  nodePort: 30010
+
+imagePullSecrets:
+  - name: dockerhub-secret
+
+podLabels:
+  app: app-calc
+
+containerPort: 3000
