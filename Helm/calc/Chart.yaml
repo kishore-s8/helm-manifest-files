@@ -2,7 +2,7 @@
 
 apiVersion: v2
 name: app-calc
-description: A Helm chart for web-cal app
+description: A Helm chart for calculator app
 type: application
 version: 0.1.0
 appVersion: "1.0"
