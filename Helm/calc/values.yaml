@@ -5,7 +5,7 @@ replicaCount: 1
 image:
   repository: 8kishore8/calculatorapp
   tag: latest
-  pullPolicy: Never
+  pullPolicy: Always
 
 nameOverride: ""
 fullnameOverride: ""
